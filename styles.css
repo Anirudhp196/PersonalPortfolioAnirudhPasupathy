@@ -3,7 +3,6 @@
     --link-color: rgb(55, 108, 186);
     --background-color: #eeeff1;
 
-
 }
 
 * {
@@ -19,4 +18,9 @@ html {
 body{
     background-color: var(--background-color);
     font-family: 'Josefin Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
 }
