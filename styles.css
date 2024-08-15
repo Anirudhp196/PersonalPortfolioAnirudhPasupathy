@@ -59,7 +59,7 @@ nav .right a span{
     padding: 0 50px;
     margin: 50px 0;
     gap:40px;
-    margin-bottom: 50px;
+    margin-bottom: 75px; /*before next section*/
 }
 
 .overview .text{
@@ -68,6 +68,10 @@ nav .right a span{
 
 .overview .text h2{
     font-size: 45px;
+}
+
+.overview .text p{
+    font-size: 20px;
 }
 
 .overview .text .links{
@@ -91,7 +95,7 @@ nav .right a span{
 }
 
 .overview .headshot{
-    flex: 1;
+    flex: 2;
     display:flex;
     justify-content: right;
 }
@@ -102,9 +106,69 @@ nav .right a span{
     width: 350px;
 }
 
+/* SKILLS */
+
+.skills{
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.skills .text{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.skills .cells{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills .cells .cell{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px 20px;
+    border: 1.5px solid rgb(33, 20, 115);
+    border-radius: 5px;
+    margin: 15px;
+    gap: 10px;
+}
+
+.skills .cells .cell span{
+    margin-right: 6px;
+    font-size: 18px;
+}
+
+.skills .cells .cell:hover{
+    background-color: rgb(57, 164, 231);
+    color: var(--text-color);
+    border: 1.5px solid var(--text-color);
+    border-radius: 5px;
+}
+
 /* OVERVIEW */
 @media (max-width: 850px){
-    
+    .overview .text h2{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 750px){
+    .overview{
+        flex-direction: column-reverse;
+    }
+
+    .overview.headshot img{
+        width: 250px;
+    }
 }
 
 /* NAVBAR */
@@ -119,5 +183,21 @@ nav .right a span{
 
     nav .right a span{
         display: none
+    }
+
+    .overview{
+        padding: 0 20px;
+    }
+
+    .overview .text h2{
+        font-size: 30px;
+    }
+
+    .skills{
+        padding: 0 20px;
+    }
+
+    .skills .cells .cell span{
+        font-size: 14px;
     }
 }
