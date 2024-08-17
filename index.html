@@ -11,7 +11,16 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("w8DPOVv8PuRqMom13");
+      })();
+    </script>
+    
     <title>Portfolio</title>
 
 
@@ -131,15 +140,21 @@
 
                 <form>
                     <label for = "name">Name</label>
-                    <input type = "text" id = "name">
+                    <input 
+                      type = "text" 
+                      id = "name"
+                    />
 
                     <label for = "email">Email</label>
-                    <input type = "email" id = "email">
+                    <input 
+                      type = "email" 
+                      id = "email"
+                    />
 
                     <label for = "message">Message</label>
                     <textarea id = "message" cols = "30" rows = "10"></textarea>
 
-                    <button type="submit">Send Message</button>
+                    <button type="submit" onclick="sendMail()">Send Message</button>
                 </form>
             </div>
         </section>
