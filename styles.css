@@ -104,7 +104,7 @@ nav .right a span{
 
 .overview .headshot img{
     border-radius: 50%;
-    height: 350px;
+    height: 450px;
     width: 350px;
 }
 
@@ -165,6 +165,7 @@ nav .right a span{
 
 .resume h2 {
     font-size: 45px;
+    margin-bottom: 20px;
 }
 
 /* CONTACT */
@@ -274,6 +275,10 @@ nav .right a span{
 
     .overview .text h2{
         font-size: 30px;
+    }
+
+    .resume{
+        padding: 0 20px;
     }
 
     .skills{
